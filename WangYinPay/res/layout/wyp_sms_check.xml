@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" >
+
+		<!-- 短信验证码 -->
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="76dp"
+				android:background="@drawable/wyp_notice_bar"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:paddingLeft="@dimen/wyp_space_middle"
+				android:paddingRight="@dimen/wyp_space_middle" >
+
+				<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@drawable/wyp_status_right" />
+
+				<LinearLayout
+						android:layout_width="fill_parent"
+						android:layout_height="76dp"
+						android:layout_marginLeft="@dimen/wyp_space_middle"
+						android:orientation="vertical" >
+
+						<TextView
+								android:id="@+id/txt_sms_tip"
+								android:layout_width="fill_parent"
+								android:layout_height="38dp"
+								android:gravity="bottom"
+								android:singleLine="true"
+								android:textSize="@dimen/wyp_txt_small" />
+
+						<TextView
+								android:layout_width="fill_parent"
+								android:layout_height="38dp"
+								android:singleLine="true"
+								android:text="@string/wyp_sms_tip_title"
+								android:textSize="@dimen/wyp_txt_small" />
+				</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/wyp_space_middle"
+				android:orientation="horizontal"
+				android:paddingLeft="@dimen/wyp_space_middle"
+				android:paddingRight="@dimen/wyp_space_middle" >
+
+				<com.wangyin.payments.widget.input.WYPActiveCodeInput
+						android:id="@+id/edit_sms_checkcode"
+						style="@style/wyp_edit"
+						android:layout_width="0dp"
+						android:layout_weight="5"
+						android:hint="@string/wyp_sms_checkcode" />
+
+				<Button
+						android:id="@+id/btn_sms_send"
+						style="@style/wyp_btn_bright"
+						android:layout_width="0dp"
+						android:layout_marginLeft="@dimen/wyp_space_middle"
+						android:layout_weight="4" />
+		</LinearLayout>
+
+</LinearLayout>

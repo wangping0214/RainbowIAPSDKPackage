@@ -1,0 +1,22 @@
+<resources>
+
+		<!-- 键盘高度 -->
+		<dimen name="key_height">50.0dip</dimen>
+		
+		<!-- 键盘高度 -->
+        <dimen name="wyp_title_height">48dp</dimen>
+
+		<!-- 间距 -->
+		<dimen name="wyp_space_xsmall">4dp</dimen>
+		<dimen name="wyp_space_small">6dp</dimen>
+        <dimen name="wyp_space_middle">12dp</dimen>
+        <dimen name="wyp_space_large">18dp</dimen>
+        <dimen name="wyp_space_xlarge">24dp</dimen>
+        <dimen name="wyp_space_xxlarge">48dp</dimen>
+
+		<!-- 字体大小 -->
+		<dimen name="wyp_txt_small">14sp</dimen>
+		<dimen name="wyp_txt_middle">16sp</dimen>
+		<dimen name="wyp_txt_large">20sp</dimen>
+
+</resources>

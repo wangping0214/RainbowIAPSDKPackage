@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wangyin.payments.widget.button.WYPButton xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/wyp_btn_selectbank"
+		style="@style/wyp_btn_select"
+		android:layout_marginLeft="@dimen/wyp_space_middle"
+		android:layout_marginRight="@dimen/wyp_space_middle"
+		android:layout_marginTop="@dimen/wyp_space_middle"
+		android:singleLine="true"
+		android:gravity="center_vertical|left"
+		android:textColor="@color/txt_normal"/>

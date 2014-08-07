@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">五彩时空支付Demo</string>
+    <string name="product_id_1">com.rainbow.product1</string>
+    <string name="product_name_1">金包</string>
+    <string name="product_count_1">X 1000</string>
+    <string name="product_price_1">￥0.01</string>
+    <string name="product_desc_1">神奇的游戏金币礼包</string>
+    <string name="product_id_2">com.rainbow.product2</string>
+    <string name="product_name_2">金袋</string>
+    <string name="product_count_2">X 2000</string>
+    <string name="product_price_2">￥0.02</string>
+    <string name="product_desc_2">超豪的游戏金币礼包</string>
+    <string name="product_id_3">com.rainbow.product3</string>
+    <string name="product_name_3">小钻袋</string>
+    <string name="product_count_3">X 2000</string>
+    <string name="product_price_3">￥0.03</string>
+    <string name="product_desc_3">超豪的小钻袋礼包</string>
+    <string name="product_id_4">com.rainbow.product4</string>
+    <string name="product_name_4">大钻袋</string>
+    <string name="product_count_4">X 4000</string>
+    <string name="product_price_4">￥0.04</string>
+    <string name="product_desc_4">超豪的大钻袋礼包</string>
+    <string name="title_activity_product_detail">商品详细信息</string>
+    <string name="product_purchase_text">购买</string>
+</resources>

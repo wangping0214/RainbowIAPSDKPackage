@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" >
+
+		<LinearLayout
+				style="@style/wyp_layout"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+
+				<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@drawable/wyp_status_right" />
+
+				<LinearLayout
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="@dimen/wyp_space_middle"
+						android:orientation="vertical" >
+
+						<TextView
+								android:id="@+id/wyp_title"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:textColor="@color/txt_normal"
+								android:text="@string/wyp_unloggedin_pay_success"
+								android:textSize="@dimen/wyp_txt_middle" />
+
+						<TextView
+								android:id="@+id/wyp_txt_amount"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:textColor="@color/txt_amount"
+								android:textSize="@dimen/wyp_txt_middle" />
+				</LinearLayout>
+		</LinearLayout>
+
+		<Button
+				android:id="@+id/wyp_btn_submit"
+				style="@style/wyp_btn_red"
+				android:layout_marginLeft="@dimen/wyp_space_middle"
+				android:layout_marginRight="@dimen/wyp_space_middle"
+				android:layout_marginTop="@dimen/wyp_space_large"
+				android:text="@string/wyp_unloggedin_sure" />
+
+</LinearLayout>

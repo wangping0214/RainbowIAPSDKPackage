@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 高亮文字（白色） -->
+    <color name="txt_bright">#FFFFFF</color>
+    <!-- 普通文字（黑色） -->
+    <color name="txt_normal">#4D4D4D</color>
+    <!-- 暗色文字（灰色） -->
+    <color name="txt_dark">#999999</color>
+    <!-- 金钱文字（橘黄） -->
+    <color name="txt_amount">#FF6600</color>
+    <!-- 链接文字（蓝色） -->
+    <color name="txt_links">#0086c9</color>
+    <!-- 透明黑色 -->
+    <color name="toast_backgrount">#c0000000</color>
+
+</resources>

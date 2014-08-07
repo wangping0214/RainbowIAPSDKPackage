@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/product_detail_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/big_diamond_bag" />
+
+    <TextView
+        android:id="@+id/product_detail_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp"
+        android:text="@string/product_desc_4"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/product_detail_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/product_detail_count"
+        android:layout_below="@+id/product_detail_count"
+        android:layout_marginTop="15dp"
+        android:text="@string/product_price_4"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/product_detail_purchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/product_detail_desc"
+        android:text="@string/product_purchase_text" />
+
+    <TextView
+        android:id="@+id/product_detail_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/product_detail_name"
+        android:layout_below="@+id/product_detail_name"
+        android:layout_marginTop="16dp"
+        android:text="@string/product_count_4"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/product_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="62dp"
+        android:layout_toRightOf="@+id/product_detail_purchase"
+        android:text="@string/product_name_4"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" >
+
+		<RelativeLayout
+				android:id="@+id/wyp_bankname"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/wyp_btn_banklist_title" >
+
+				<com.wangyin.payments.widget.image.WYPImageView 
+						android:id="@+id/wyp_img_banklogo"
+						android:layout_width="60dp"
+						android:layout_height="60dp"
+						android:layout_centerVertical="true"
+						android:layout_marginLeft="6dp"
+						android:src="@drawable/wyp_bank_default"
+						android:padding="@dimen/wyp_space_small" />
+
+				<TextView
+						android:id="@+id/wyp_txt_bankname"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:layout_marginLeft="@dimen/wyp_space_middle"
+						android:layout_toRightOf="@id/wyp_img_banklogo"
+						android:singleLine="true"
+						android:textColor="@color/txt_normal"
+						android:textSize="@dimen/wyp_txt_middle" />
+		</RelativeLayout>
+
+		<LinearLayout
+				android:id="@+id/wyp_cardtype"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:padding="0dp"
+				android:visibility="gone" >
+
+				<Button
+						android:id="@+id/wyp_cardtype_cc"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:background="@drawable/wyp_btn_banklist_cc"
+						android:enabled="false"
+						android:gravity="center"
+						android:singleLine="true"
+						android:text="@string/wyp_dialog_cc"
+						android:textColor="@drawable/wyp_btn_banklist_txt" />
+
+				<Button
+						android:id="@+id/wyp_cardtype_dc"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:background="@drawable/wyp_btn_banklist_dc"
+						android:enabled="false"
+						android:gravity="center"
+						android:singleLine="true"
+						android:text="@string/wyp_dialog_dc"
+						android:textColor="@drawable/wyp_btn_banklist_txt" />
+		</LinearLayout>
+
+</LinearLayout>

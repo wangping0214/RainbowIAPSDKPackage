@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+		<!-- app -->
+		<string name="wyp">wyp</string>
+		<string name="wyp_version">0.3.4</string>
+		<string name="wyp_jd">收银台</string>
+		<string name="wyp_init">启动支付插件&#8230;&#8230;</string>
+
+		<!-- app error/info -->
+		<string name="wyp_error_net_nohost">网络不给力，请确认网络可用</string>
+		<string name="wyp_error_net_timeout">网络超时</string>
+		<string name="wyp_error_net_unconnect">无网络连接，请检查网络</string>
+		<string name="wyp_error_system">系统异常</string>
+		<string name="wyp_error_param">支付参数错误</string>
+		<string name="wyp_fail">支付插件调用失败</string>
+		<string name="wyp_success">支付插件调用成功</string>
+
+		<!-- 校验提示 -->
+
+		<string name="wyp_check_idcard">身份证号是15或18位数字、字母</string>
+		<string name="wyp_check_mobile">手机号码是11位数字</string>
+		<string name="wyp_check_cvv">请输入卡背面的后三位数字</string>
+		<string name="wyp_check_name">姓名最少两个字，请重新填写</string>
+		<string name="wyp_check_activecode">交易验证码是6位</string>
+		<string name="wyp_check_validdata">信用卡有效期是月/年</string>
+		<!-- 第三方传入参数校验 -->
+		<string name="wyp_check_params_error">参数错误:</string>
+		<string name="wyp_check_merchant_number_empty">商户号必填</string>
+		<string name="wyp_check_merchant_number_length">商户号需小于50位</string>
+		<string name="wyp_check_trade_number_empty">交易号必填</string>
+		<string name="wyp_check_trade_number_length">交易号需小于50位</string>
+		<string name="wyp_check_trade_name_empty">交易名称必填</string>
+		<string name="wyp_check_trade_name_length">交易名称需小于64位</string>
+		<string name="wyp_check_trade_time_empty">交易时间必填</string>
+		<string name="wyp_check_trade_amount_empty">交易金额必填</string>
+		<string name="wyp_check_trade_amount_illegal">交易金额大于0.01元小于9999999999.99元</string>
+		<string name="wyp_check_currency_illegal">货币种类不合法，默认人民币为156</string>
+		<string name="wyp_check_notify_url_empty">外部通知地址必填</string>
+		<string name="wyp_check_notify_url_length">外部通知地址需小于200位</string>
+		<string name="wyp_check_notify_url_illegal">外部通知地址格式不正确</string>
+		<string name="wyp_check_cards_length">银行卡数量需小于10张</string>
+		<string name="wyp_check_card_number_empty">银行卡号不能为空</string>
+		<string name="wyp_check_card_number_illegal">银行卡号为16位或19位数字</string>
+
+		<!-- unit -->
+		<string name="wyp_unit_yuan">%s 元</string>
+
+		<!-- widget -->
+		<string name="wyp_cancel">取消</string>
+		<string name="wyp_sure">确定</string>
+		<string name="wyp_listview_pull">下拉刷新</string>
+		<string name="wyp_listview_release_refresh">松开刷新数据</string>
+		<string name="wyp_listview_release_load">松开载入更多</string>
+		<string name="wyp_listview_loading">正在加载&#8230;</string>
+		<string name="wyp_listview_time">上次更新时间：</string>
+		<string name="wyp_listview_more">查看更多</string>
+		<string name="wyp_sms_checkcode">交易验证码 </string>
+		<string name="wyp_sms_send">重新获取 </string>
+		<string name="wyp_sms_resend"> %s 秒后重发 </string>
+		<string name="wyp_sms_tip_title">请输入其中的交易验证码，完成付款。</string>
+		<string name="wyp_dialog_loading">正在加载&#8230;</string>
+		<string name="wyp_dialog_title">提示</string>
+		<string name="wyp_dialog_giveup">放弃本次付款？</string>
+		<string name="wyp_dailog_validdate">信用卡有效期</string>
+		<string name="wyp_dailog_alert">提示</string>
+		<string name="wyp_dailog_alert_content">确认退出操作？</string>
+		<string name="wyp_dialog_year">年</string>
+		<string name="wyp_dialog_month">月</string>
+		<string name="wyp_dialog_web_title">快捷支付协议</string>
+		<string name="wyp_dialog_banklist_title">选择银行</string>
+		<string name="wyp_dialog_dc">储蓄卡</string>
+		<string name="wyp_dialog_cc">信用卡</string>
+		<string name="wyp_dialog_cancel">关闭</string>
+
+		<!-- 支付通道 -->
+		<string name="wyp_unloggedin_dc">储蓄卡</string>
+		<string name="wyp_unloggedin_cc">信用卡</string>
+		<string name="wyp_unloggedin_card_info" formatted="false">%s 尾号(%s)</string>
+		<string name="wyp_unloggedin_card_pay">使用其它银行卡</string>
+		<string name="wyp_unloggedin_card_number_input">输入银行卡卡号</string>
+		<string name="wyp_unloggedin_card_type_select">选择银行卡类型</string>
+		<string name="wyp_unloggedin_select_card">选择银行卡</string>
+		<string name="wyp_unloggedin_card_number">银行卡号</string>
+		<string name="wyp_unloggedin_card_username">持卡人姓名</string>
+		<string name="wyp_unloggedin_card_mobile">持卡人手机号码</string>
+		<string name="wyp_unloggedin_card_idcard">持卡人证件号码</string>
+		<string name="wyp_unloggedin_card_valid">有效期</string>
+		<string name="wyp_unloggedin_card_cvv2">cvv2</string>
+		<string name="wyp_unloggedin_select_bank">选择银行</string>
+		<string name="wyp_unloggedin_quick_payments"><u>开通快捷支付服务</u></string>
+		<string name="wyp_unloggedin_quick_payments_agreement">快捷支付协议</string>
+		<string name="wyp_unloggedin_pay_success">付款成功!</string>
+		<string name="wyp_unloggedin_pay_fail">付款失败!</string>
+		<string name="wyp_unloggedin_pay_cancel">付款终止</string>
+		<string name="wyp_unloggedin_next">下一步</string>
+		<string name="wyp_unloggedin_pay">确认付款</string>
+		<string name="wyp_unloggedin_sure">确定</string>
+		<string name="wyp_unloggedin_back">返回</string>
+		<string name="wyp_unloggedin_sms_tip">已向手机号  %s 发送短信，</string>
+		<string name="wyp_unloggedin_security_tip">采用多种技术保障安全，您所输入的信息在传递至银行过程中，均会加密处理，请放心支付。</string>
+		<string name="wyp_unloggedin_check_qpay">请开通快捷支付协议</string>
+		<string name="wyp_unloggedin_check_select_bankcard">请选择银行</string>
+
+</resources>

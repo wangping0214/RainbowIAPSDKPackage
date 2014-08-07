@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" >
+
+		<!-- 订单概要信息 -->
+
+		<LinearLayout
+				style="@style/wyp_layout"
+				android:orientation="vertical" >
+
+				<TextView
+						android:id="@+id/wyp_txt_pay_content"
+						android:layout_width="wrap_content"
+						android:layout_height="38dp"
+						android:gravity="bottom"
+						android:paddingBottom="@dimen/wyp_space_small"
+						android:singleLine="true"
+						android:textColor="@color/txt_normal"
+						android:textSize="@dimen/wyp_txt_small" />
+
+				<TextView
+						android:id="@+id/wyp_txt_amount"
+						android:layout_width="wrap_content"
+						android:layout_height="38dp"
+						android:paddingBottom="@dimen/wyp_space_xsmall"
+						android:singleLine="true"
+						android:textColor="@color/txt_amount"
+						android:textSize="@dimen/wyp_txt_large" />
+		</LinearLayout>
+		<!-- 银行卡输入 -->
+
+		<com.wangyin.payments.widget.input.WYPBankCardInput
+				android:id="@+id/wyp_edit_bankcard"
+				style="@style/wyp_edit"
+				android:layout_width="fill_parent"
+				android:layout_marginLeft="@dimen/wyp_space_middle"
+				android:layout_marginRight="@dimen/wyp_space_middle"
+				android:layout_marginTop="@dimen/wyp_space_middle"
+				android:hint="@string/wyp_unloggedin_card_number_input"
+				android:inputType="number" />
+		<!-- 银行提示 -->
+
+		<com.wangyin.payments.widget.WYPTextView
+				android:id="@+id/wyp_txt_tip_right"
+				android:layout_width="fill_parent"
+				android:layout_height="49dp"
+				android:layout_marginLeft="@dimen/wyp_space_middle"
+				android:layout_marginRight="@dimen/wyp_space_middle"
+				android:layout_marginTop="-5dp"
+				android:background="@drawable/wyp_tip"
+				android:drawableLeft="@drawable/wyp_tip_right"
+				android:drawablePadding="@dimen/wyp_space_small"
+				android:gravity="center_vertical"
+				android:paddingLeft="@dimen/wyp_space_middle"
+				android:paddingRight="@dimen/wyp_space_middle"
+				android:paddingTop="5dp"
+				android:textColor="@color/txt_normal"
+				android:textSize="@dimen/wyp_txt_middle"
+				android:visibility="gone" />
+		<!-- 选择银行 -->
+
+		<com.wangyin.payments.widget.button.WYPButton
+				android:id="@+id/wyp_btn_selectbank"
+				style="@style/wyp_btn_select"
+				android:layout_marginLeft="@dimen/wyp_space_middle"
+				android:layout_marginRight="@dimen/wyp_space_middle"
+				android:layout_marginTop="@dimen/wyp_space_middle"
+				android:gravity="left|center_vertical"
+				android:hint="@string/wyp_unloggedin_select_bank"
+				android:paddingLeft="@dimen/wyp_space_middle"
+				android:visibility="gone" />
+		<!-- 下一步按钮 -->
+
+		<Button
+				android:id="@+id/wyp_btn_sure"
+				style="@style/wyp_btn_red"
+				android:layout_width="fill_parent"
+				android:layout_marginBottom="@dimen/wyp_space_large"
+				android:layout_marginLeft="@dimen/wyp_space_middle"
+				android:layout_marginRight="@dimen/wyp_space_middle"
+				android:layout_marginTop="@dimen/wyp_space_large"
+				android:enabled="false"
+				android:text="@string/wyp_unloggedin_next" />
+
+</LinearLayout>

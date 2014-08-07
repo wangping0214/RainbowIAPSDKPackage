@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		style="@style/wyp_layout"
+		android:orientation="vertical" >
+
+		<TextView
+			android:id="@+id/wyp_txt_pay_content"
+			android:layout_width="wrap_content"
+			android:layout_height="38dp"
+			android:gravity="bottom"
+			android:paddingBottom="@dimen/wyp_space_small"
+			android:singleLine="true"
+			android:textColor="@color/txt_normal"
+			android:textSize="@dimen/wyp_txt_small" />
+
+		<TextView
+			android:id="@+id/wyp_txt_amount"
+			android:layout_width="wrap_content"
+			android:layout_height="38dp"
+			android:paddingBottom="@dimen/wyp_space_xsmall"
+			android:singleLine="true"
+			android:textColor="@color/txt_amount"
+			android:textSize="@dimen/wyp_txt_large" />
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/wyp_space_middle"
+		android:layout_marginTop="@dimen/wyp_space_middle"
+		android:text="@string/wyp_unloggedin_select_card"
+		android:textColor="@color/txt_normal"
+		android:textSize="@dimen/wyp_txt_middle"
+		android:textStyle="bold" />
+
+	<LinearLayout
+		android:id="@+id/wyp_layout_cards"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical" >
+	</LinearLayout>
+
+</LinearLayout>

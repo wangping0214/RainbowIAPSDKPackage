@@ -1,0 +1,110 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+		<style name="app_base_theme" parent="android:Theme.Light.NoTitleBar"></style>
+
+		<!-- Application theme. -->
+		<style name="AppTheme" parent="app_base_theme">
+				<!-- All customizations that are NOT specific to a particular API-level can go here. -->
+		</style>
+
+		<!-- dialog -->
+		<style name="wyp_dialog" parent="@android:style/Theme.Dialog">
+				<item name="android:windowFrame">@null</item>
+				<item name="android:windowIsFloating">true</item>
+				<!-- 浮动在屏幕中间 -->
+				<item name="android:windowNoTitle">true</item>
+				<!-- 无标题 -->
+				<item name="android:windowBackground">@android:color/transparent</item>
+				<!-- dialog背景 -->
+				<item name="android:background">@android:color/transparent</item>
+				<!-- dialog内容背景 -->
+				<item name="android:backgroundDimEnabled">true</item>
+				<!-- 显示window背景 -->
+				<item name="android:windowIsTranslucent">true</item>
+				<!-- 窗口半透明 -->
+		</style>
+
+		<!-- 普通文本 -->
+		<style name="wyp_txt">
+				<item name="android:textSize">@dimen/wyp_txt_small</item>
+				<item name="android:layout_width">wrap_content</item>
+				<item name="android:layout_height">wrap_content</item>
+		</style>
+
+		<!-- 超链接文本 -->
+		<style name="wyp_txt_hyperlinks" parent="wyp_txt">
+				<item name="android:textSize">@dimen/wyp_txt_small</item>
+				<item name="android:textColor">@color/txt_links</item>
+				<item name="android:clickable">true</item>
+		</style>
+
+		<!-- 默认文本框 -->
+		<style name="wyp_edit">
+				<item name="android:layout_width">match_parent</item>
+				<item name="android:background">@drawable/wyp_edit_red</item>
+				<item name="android:layout_height">49dp</item>
+				<item name="android:paddingLeft">12dp</item>
+				<item name="android:paddingRight">12dp</item>
+				<item name="android:textSize">@dimen/wyp_txt_middle</item>
+				<item name="android:singleLine">true</item>
+		</style>
+
+		<!-- 信息显示框背景 -->
+		<style name="wyp_layout">
+				<item name="android:layout_width">match_parent</item>
+				<item name="android:layout_height">76dp</item>
+				<item name="android:paddingLeft">12dp</item>
+				<item name="android:paddingRight">12dp</item>
+				<item name="android:background">@drawable/wyp_notice_bar</item>
+		</style>
+
+		<!-- 默认按钮 -->
+		<style name="wyp_btn">
+				<item name="android:paddingLeft">12dp</item>
+				<item name="android:paddingRight">12dp</item>
+				<item name="android:layout_width">match_parent</item>
+				<item name="android:layout_height">49dp</item>
+				<item name="android:textSize">@dimen/wyp_txt_middle</item>
+		</style>
+
+		<!-- 红色按钮 -->
+		<style name="wyp_btn_red" parent="wyp_btn">
+				<item name="android:background">@drawable/wyp_btn_normal</item>
+				<item name="android:textColor">@drawable/wyp_btn_txtcolor_bright</item>
+				<item name="android:textSize">@dimen/wyp_txt_large</item>
+		</style>
+
+		<!-- 白色按钮 -->
+		<style name="wyp_btn_bright" parent="wyp_btn">
+				<item name="android:background">@drawable/wyp_btn_bright</item>
+				<item name="android:textColor">@drawable/wyp_btn_txtcolor_normal</item>
+		</style>
+
+		<!-- 选择按钮 -->
+		<style name="wyp_btn_select" parent="wyp_btn">
+				<item name="android:background">@drawable/wyp_btn_select</item>
+				<item name="android:drawableRight">@drawable/wyp_btn_select_arrow</item>
+				<item name="android:textColor">@drawable/wyp_btn_txtcolor_normal</item>
+		</style>
+
+		<!-- 左侧按钮 -->
+		<style name="wyp_btn_left" parent="wyp_btn">
+				<item name="android:background">@drawable/wyp_btn_dialog_left</item>
+				<item name="android:textColor">@color/txt_normal</item>
+				<item name="android:textSize">@dimen/wyp_txt_large</item>
+		</style>
+		<!-- 右侧按钮 -->
+		<style name="wyp_btn_right" parent="wyp_btn">
+				<item name="android:background">@drawable/wyp_btn_dialog_right</item>
+				<item name="android:textColor">@color/txt_normal</item>
+				<item name="android:textSize">@dimen/wyp_txt_large</item>
+		</style>
+
+		<!-- 设置密码是否显示CheckBox -->
+		<style name="wyp_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+				<item name="android:button">@drawable/wyp_checkbox</item>
+				<item name="android:layout_width">wrap_content</item>
+				<item name="android:layout_height">wrap_content</item>
+		</style>
+
+</resources>
